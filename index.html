@@ -13,8 +13,13 @@
             flex-wrap: wrap;
         }
         .sectiontwo{
-            height: 600px;
-            background-color: black;
+            display: flex;
+            height: 900px;
+            background-color: white;
+            flex-wrap: wrap;
+            border: 10px;
+            border-style: dotted;
+            border-color: rgb(58, 226, 43);
         }
         .sectionone>.left{
             display: flex;
@@ -25,6 +30,9 @@
         }
         .sectionone>.left> img{
             border-radius: 50%;
+            border-style: dashed;
+            border-color: brown;
+            font-size: 50px;
         }
         .sectionone>.right{
             display: flex;
@@ -33,12 +41,29 @@
             justify-content: center;
             height: 600px;
             padding-left: 30px;
+            line-height: 0px;
+            font-size: 30px;
+        } 
+        .sectiontwo>.one{
+            display: flex;
+            height: 900px;
+            width: 30%;
+            flex-direction: column;
+            align-items:center;
+            justify-content: flex-start;
+            border: 2px;
+            border-style: dashed;
+            border-color: aqua;
+            line-height: 0px;
         }
-        .sectionone>.right> p{
-            font color:blue;
-            
+        .sectiontwo>.two{
+            display: flex;
+            height: 900px;
+            width: 69%;
+            border: 2px;
+            border-style: dashed;
+            border-color: blue;
         }
-        
     </style>
 </head>
 <body>
@@ -49,13 +74,25 @@
 
         </div>
         <div class="right">
-            <h1 style="font-size:50px;">NADEEM HAKEEM</h1>
-            <h3>OBJECTIVE</h3>
-            <p>Emphasis in office management looking forward to pursue a challenging carrier in an organization, which offers dynamic opportunities and excellent working environment.
-            </p>
-
+            <h1 style="font-size:80px;">NADEEM HAKEEM</h1>
+            <P>SOFTWARE DEVELOPER</P>
+        </div>
+    </div>
+    <div class="sectiontwo">
+        <div class="one">
+            <h1>CONTACT</h1><br><hr>
+            <h2>Phone no</h2>
+            <p>+923128892462</p>
+            <h2>Address</h2><br><br>
+            <p>house no R-65 sector 5A-4 north karachi</p><br>
+            <h2>Email</h2>
+            <p>syednadeemali221@gmail.com</p>
+        </div>
+        <div class="two">
+           <u><h1>EXPERIENCE</h1></u>
 
         </div>
+
     </div>
 
 </body>
