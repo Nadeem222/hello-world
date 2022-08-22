@@ -1,99 +1,165 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+
     <style>
-        .sectionone{
+        .sectionOne {
+            border: 2px solid red;
             display: flex;
-            height: 600px;
-            background-color: aliceblue;
+            height: 400px;
             flex-wrap: wrap;
+
+
+        }
+
+        .sectionOne>.left>img {
+            width: 200px;
+            border-radius: 50%;
+        }
+
+        .sectionOne>.left {
+            border: 2px solid blue;
+            /* width: 30%; */
+            flex-grow: 30;
+
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .sectionOne>.right {
+            border: 2px solid blue;
+            /* width: 70%; */
+            flex-grow: 70;
+
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+
+        }
+
+        .sectionOne>.right> h1,
+        .sectionOne>.right> h2,
+        .sectionOne>.right> h4{
+            margin: 5px;
         }
         .sectiontwo{
             display: flex;
+            border: 3px solid blue;
             height: 900px;
-            background-color: white;
             flex-wrap: wrap;
-            border: 10px;
-            border-style: dotted;
-            border-color: rgb(58, 226, 43);
         }
-        .sectionone>.left{
-            display: flex;
-            height: 600px;
-            width: 30%;
-            align-items: center;
-            justify-content: center;
-        }
-        .sectionone>.left> img{
-            border-radius: 50%;
-            border-style: dashed;
-            border-color: brown;
-            font-size: 50px;
-        }
-        .sectionone>.right{
-            display: flex;
-            align-items: flex-start;
-            flex-direction: column;
-            justify-content: center;
-            height: 600px;
-            padding-left: 30px;
-            line-height: 0px;
-            font-size: 30px;
-        } 
         .sectiontwo>.one{
             display: flex;
-            height: 900px;
-            width: 30%;
+            flex-grow: 30;
             flex-direction: column;
-            align-items:center;
-            justify-content: flex-start;
-            border: 2px;
-            border-style: dashed;
-            border-color: aqua;
-            line-height: 0px;
+            flex-wrap: wrap;
+            border: 3px solid yellow;
+        }
+        .sectiontwo>.centre{
+            display: flex;
+            flex-grow: 20;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+        .sectiontwo>.centre>.vl{
+            border-right: 6px solid green;
+            height: 500px;
+            
         }
         .sectiontwo>.two{
             display: flex;
-            height: 900px;
-            width: 69%;
-            border: 2px;
-            border-style: dashed;
-            border-color: blue;
+            flex-grow: 40;
+            flex-direction: column;
+            flex-wrap: wrap;
+            border: 3px solid black;
         }
     </style>
+
 </head>
+
 <body>
-    <div class="sectionone">
+    <div class="sectionOne">
 
         <div class="left">
-            <img width="50%" height="50%" src="./img/download1.jpg" alt="">
-
+            <img src="./img/profile.jpg" alt="">
         </div>
         <div class="right">
-            <h1 style="font-size:80px;">NADEEM HAKEEM</h1>
-            <P>SOFTWARE DEVELOPER</P>
+
+            <h1>M.Inzamam Malik</h1>
+            <h4>Ai Chatbot and Web Developer</h4>
+            <h2>Best Chatbot developer in the World</h2>
         </div>
     </div>
     <div class="sectiontwo">
         <div class="one">
-            <h1>CONTACT</h1><br><hr>
-            <h2>Phone no</h2>
-            <p>+923128892462</p>
-            <h2>Address</h2><br><br>
-            <p>house no R-65 sector 5A-4 north karachi</p><br>
-            <h2>Email</h2>
-            <p>syednadeemali221@gmail.com</p>
+            <h1>Personal details</h1> <hr>
+				<p><b>Name:</b> <br>
+					Nadeem Hakeem<br><br>
+					
+					<b>Address:</b> <br>
+					House#R-65 Sector 5A-4<br>
+					North Karachi,Karachi<br><br>
+				
+				    <b>Phone Number:</b> <br>
+					+923128892462<br><br>
+					
+					<b>Email Address:</b> <br>
+					syednadeemali221@gmail.com<br><br>
+					
+					<b>Linkedin:</b> <br>
+					www.linkedin.com/in/syed-nadeem-ali<br><br>
+
+ 				
+				</p>
+		       <h2>Interest</h2><hr>
+				<p>Software Development</p>
+				<p>Sports</p>
+				<p>Cooking</p>
+				<p>Reading</p>
+				<h2>Languages</h2>
+				<p><b>English:</b>Native Speaker</p>
+				<p><b>Urdu:</b>Very Good Command</p>
+
+        </div>
+        <div class="centre">
+            <div class="vl"></div>
+
         </div>
         <div class="two">
-           <u><h1>EXPERIENCE</h1></u>
+            <h1>NADEEM HAKEEM</h1><hr>
+				<p>Emphasis in office management looking forward to pursue a challenging carrier in an organization, which offers dynamic opportunities and excellent working environment.</p>
+				<h2>Work Experience</h2><hr>
+				<h3>Sales coordinator in PAAG International  ltd:</h3>
+				<h5>Responsibility:</h5>
+				<ul>
+				    <li>All distributors secondary primary sales monitoring</li>
+					<li>All distributors Credit and cheque monitor</li>	 	
+					<li>Maintain Status reports</li>	 	
+					<li>All staff attendance maintain</li>	   	
+                    <li>All staff daily booking sheet collect  reporting to RSM</li>    	
+                    <li>Target vs. sales report maintain</li>      	
+                    <li>All distributor ledger monitor</li>      	
+					</ul>
+				<h3>Distributor Manager in Al Habib Distribution Services: </h3>
+				<h5>Responsibility:</h5>
+				<ul>
+					<li>Leading Distribution team</li>
+					<li>Manage All Sales Van.</li>
+					<li>Manage All Distributor Accounts</li>
+					<li>Generate Distribution Ledger.</li>
+				</ul>
+                <h3>Refrence:</h3>
+                <ul>will be furnished on demand.</ul>
 
         </div>
 
     </div>
-
 </body>
+
 </html>
